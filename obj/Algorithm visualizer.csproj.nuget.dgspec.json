@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\Algorithm visualizer\\Algorithm visualizer.csproj": {}
+    "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\SortingAlgorythmVisualizer\\Algorithm visualizer.csproj": {}
   },
   "projects": {
-    "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\Algorithm visualizer\\Algorithm visualizer.csproj": {
+    "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\SortingAlgorythmVisualizer\\Algorithm visualizer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\Algorithm visualizer\\Algorithm visualizer.csproj",
+        "projectUniqueName": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\SortingAlgorythmVisualizer\\Algorithm visualizer.csproj",
         "projectName": "Algorithm visualizer",
-        "projectPath": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\Algorithm visualizer\\Algorithm visualizer.csproj",
+        "projectPath": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\SortingAlgorythmVisualizer\\Algorithm visualizer.csproj",
         "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
-        "outputPath": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\Algorithm visualizer\\obj\\",
+        "outputPath": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\SortingAlgorythmVisualizer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

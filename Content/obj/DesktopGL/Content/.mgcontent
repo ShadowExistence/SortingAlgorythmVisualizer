@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Szkola/Introduction to programming/SomeGameiGuess/Algorithm visualizer/Content/rectangleBackground.png</File>
-    <File>D:/Szkola/Introduction to programming/SomeGameiGuess/Algorithm visualizer/Content/SmollLogo.jpg</File>
+    <File>D:/Szkola/Introduction to programming/SomeGameiGuess/SortingAlgorythmVisualizer/Content/rectangleBackground.png</File>
+    <File>D:/Szkola/Introduction to programming/SomeGameiGuess/SortingAlgorythmVisualizer/Content/SmollLogo.jpg</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Szkola/Introduction to programming/SomeGameiGuess/Algorithm visualizer/Content/SmollLogo.jpg</SourceFile>
+  <SourceFile>D:/Szkola/Introduction to programming/SomeGameiGuess/SortingAlgorythmVisualizer/Content/SmollLogo.jpg</SourceFile>
   <SourceTime>2021-06-04T15:48:37.6381804+02:00</SourceTime>
-  <DestFile>D:/Szkola/Introduction to programming/SomeGameiGuess/Algorithm visualizer/Content/bin/DesktopGL/Content/SmollLogo.xnb</DestFile>
-  <DestTime>2021-06-04T15:52:00.1576851+02:00</DestTime>
+  <DestFile>D:/Szkola/Introduction to programming/SomeGameiGuess/SortingAlgorythmVisualizer/Content/bin/DesktopGL/Content/SmollLogo.xnb</DestFile>
+  <DestTime>2021-06-05T01:14:02.0359552+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

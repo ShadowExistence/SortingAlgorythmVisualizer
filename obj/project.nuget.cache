@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KrylTQEVMWWEsf0PvThI8duDNkQYG8No4hD9s97bBbw9vx7GoTG+21kH15ltybaEYbs+hIyXaxmO5k9AyWi05g==",
+  "dgSpecHash": "n6cBhjBjq44unN+QRW3eopwWDbdgURn/NP7grlvPqSofSuoWZ0Z5D0Xp6VWW25pykALTIlUIaLnXZ5SwKidzxQ==",
   "success": true,
-  "projectFilePath": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\Algorithm visualizer\\Algorithm visualizer.csproj",
+  "projectFilePath": "D:\\Szkola\\Introduction to programming\\SomeGameiGuess\\SortingAlgorythmVisualizer\\Algorithm visualizer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shado\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\shado\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
