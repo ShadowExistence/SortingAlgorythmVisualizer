@@ -53,25 +53,7 @@ namespace Algorithm_visualizer
 
             if (Keyboard.GetState().IsKeyDown(Keys.Enter))
             {
-                Debug.WriteLine("The key works");
-                int temp;
-                for (int j = 0; j <= MainArray.Length - 2; j++)
-                {
-                    for (int i = 0; i <= MainArray.Length - 2; i++)
-                    {
-                        if (MainArray[i] > MainArray[i + 1])
-                        {
-                            temp = MainArray[i + 1];
-                            MainArray[i + 1] = MainArray[i];
-                            MainArray[i] = temp;
-
-                            Draw(gameTime);
-                            EndDraw();
-                            Thread.Sleep(100);
-                        }
-                    }
-                }
-
+                sortingalgo.Sorting(gameTime);
             }
 
             // TODO: Add your update logic here
@@ -88,7 +70,6 @@ namespace Algorithm_visualizer
             spriteBatch.End();
 
             // TODO: Add your drawing code here
-            
             base.Draw(gameTime);
         }
     }

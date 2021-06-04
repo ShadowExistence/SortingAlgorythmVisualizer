@@ -3,16 +3,20 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Threading;
+using System.Diagnostics;
 
 namespace Algorithm_visualizer
 {
-    class SortingAlgo 
+    class SortingAlgo : IDrawable
     {
         private SpriteBatch spriteBatch { get; set; }
         private GraphicsDeviceManager graphics { get; set; }
         public MySprite sprite { get; set; }
         public int[] MainArray { get; set; }
 
+        public int DrawOrder => 1;
+
+        public bool Visible => true;
 
         public SortingAlgo(SpriteBatch spriteBatch, MySprite sprite, GraphicsDeviceManager graphics, int[] MainArray )
         {
@@ -22,6 +26,8 @@ namespace Algorithm_visualizer
             this.MainArray = MainArray;
         }
 
+        public event EventHandler<EventArgs> DrawOrderChanged;
+        public event EventHandler<EventArgs> VisibleChanged;
 
         public void VisualizeArray(int[] MainArray)
         {
@@ -35,18 +41,20 @@ namespace Algorithm_visualizer
 
         public void Sorting( GameTime gameTime)
         {
+            
             int temp;
             for (int j = 0; j <= MainArray.Length - 2; j++)
             {
                 for (int i = 0; i <= MainArray.Length - 2; i++)
                 {
+                    
                     if (MainArray[i] > MainArray[i + 1])
                     {
                         temp = MainArray[i + 1];
                         MainArray[i + 1] = MainArray[i];
                         MainArray[i] = temp;
-
-                        //Draw(gameTime);
+                        graphics.BeginDraw(); // This bool has to be there other ways draw doesn't work lol
+                        Draw(gameTime);
                         graphics.EndDraw();
                         Thread.Sleep(100);
                     }
@@ -54,12 +62,12 @@ namespace Algorithm_visualizer
             }
         }
 
-        //public override void Draw(GameTime gameTime)
-        //{
-        //    graphics.GraphicsDevice.Clear(Color.Black);
-        //    spriteBatch.Begin();
-        //    VisualizeArray(MainArray);
-        //    spriteBatch.End();
-        //}
+        public void Draw(GameTime gameTime)
+        {
+            graphics.GraphicsDevice.Clear(Color.Black);
+            spriteBatch.Begin();
+            VisualizeArray(MainArray);
+            spriteBatch.End();
+        }
     }
 }
