@@ -12,18 +12,16 @@ namespace Algorithm_visualizer
         private SpriteBatch spriteBatch { get; set; }
         private GraphicsDeviceManager graphics { get; set; }
         public MySprite sprite { get; set; }
-        public int[] MainArray { get; set; }
-
+        private int[] MainArray { get; set; }
         public int DrawOrder => 1;
 
         public bool Visible => true;
 
-        public SortingAlgo(SpriteBatch spriteBatch, MySprite sprite, GraphicsDeviceManager graphics, int[] MainArray )
+        public SortingAlgo(SpriteBatch spriteBatch, MySprite sprite, GraphicsDeviceManager graphics)
         {
             this.spriteBatch = spriteBatch;
             this.sprite = sprite;
             this.graphics = graphics;
-            this.MainArray = MainArray;
         }
 
         public event EventHandler<EventArgs> DrawOrderChanged;
@@ -39,9 +37,9 @@ namespace Algorithm_visualizer
 
         }
 
-        public void Sorting( GameTime gameTime)
+        public void Sorting(int[] MainArray, GameTime gameTime)
         {
-            
+            this.MainArray = MainArray;
             int temp;
             for (int j = 0; j <= MainArray.Length - 2; j++)
             {
@@ -54,7 +52,7 @@ namespace Algorithm_visualizer
                         MainArray[i + 1] = MainArray[i];
                         MainArray[i] = temp;
                         graphics.BeginDraw(); // This bool has to be there other ways draw doesn't work lol
-                        Draw(gameTime);
+                        Draw(null);
                         graphics.EndDraw();
                         Thread.Sleep(100);
                     }

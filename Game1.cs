@@ -42,7 +42,7 @@ namespace Algorithm_visualizer
             rectangleBackground = Content.Load<Texture2D>("rectangleBackground");
 
             sprite = new MySprite(rectangleBackground);
-            sortingalgo = new SortingAlgo(spriteBatch, sprite, graphics, MainArray);
+            sortingalgo = new SortingAlgo(spriteBatch, sprite, graphics);
             // TODO: use this.Content to load your game content here
         }
 
@@ -53,7 +53,18 @@ namespace Algorithm_visualizer
 
             if (Keyboard.GetState().IsKeyDown(Keys.Enter))
             {
-                sortingalgo.Sorting(gameTime);
+                Debug.WriteLine("Sort Array");
+                sortingalgo.Sorting(MainArray,gameTime);
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.R))
+            {
+                Debug.WriteLine("Reset Console");
+                MainArray = new int[] { 20,30,10,5,50,32,25,19,32,5,46 };
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                Environment.Exit(0);
             }
 
             // TODO: Add your update logic here
